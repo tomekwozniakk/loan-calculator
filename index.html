@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan calculator</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <h1 class="calculator__header">Loan Calculator</h1>
+        <form class="calculator__form">
+            <p class="form__row">
+                <label for="amount">Loan amount:</label>
+                <input 
+                class="form__item" 
+                id="amount" 
+                name="amount" 
+                type="number" step="any"
+                placeholder="Amount you loan">
+            </p>
+            <p class="form__row">
+                <label for="interest">Annual interest:</label>
+                <input 
+                class="form__item" 
+                id="interest" 
+                name="interest" 
+                type="number" step="any"
+                placeholder="Percent interest annually">
+            </p>
+            <p class="form__row">
+                <label for="years">Repayment years:</label>
+                <input 
+                class="form__item" 
+                id="years" 
+                name="years" 
+                type="number" step="any"
+                placeholder="Years to repay loan">
+            </p>
+            <input type="submit" value="Calculate" class="calculator__button"></input>
+        </form>
+        
+        <div class="calculator__image-container">
+            <img src="img/loading.gif" alt="" class="calculator__image">
+        </div>
+        <form class="calculator__form calculator__form--results">
+            <h2 class="calculator__secondary-header">Results</h2>
+            <p class="form__row">
+                <label for="monthly_payment">Monthly payment:</label>
+                <input 
+                class="form__item" 
+                id="monthly_payment" 
+                name="monthly_payment" 
+                type="number" 
+                disabled>
+            </p>
+            <p class="form__row">
+                <label for="total_payment">Total payment:</label>
+                <input 
+                class="form__item" 
+                id="total_payment" 
+                name="total_payment" 
+                type="number" 
+                disabled>
+            </p>
+            <p class="form__row">
+                <label for="total_interest">Total interest:</label>
+                <input 
+                class="form__item" 
+                id="total_interest" 
+                name="total_interest" 
+                type="number" 
+                disabled>
+            </p>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
