@@ -44,7 +44,7 @@ body {
 }
 
 .form__row label {
-    flex-basis: 35%;
+    flex-basis: 45%;
     font-size: 12px;
     background: rgb(199, 199, 199);
     padding: 8px 2px;
@@ -52,7 +52,7 @@ body {
 }
 
 .form__item {
-    flex-basis: 65%;
+    flex-basis: 55%;
     border:none;
     font-size: 12px;
     padding: 8px 4px;
